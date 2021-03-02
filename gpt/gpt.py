@@ -9,10 +9,11 @@ def main() -> None:
 
     train_args = {
             "overwrite_output_dir": True,
-            "reprocess_input_data": True
+            "reprocess_input_data": True,
+            "train_batch_size": 2
     }
     model = ConvAIModel("gpt2", "gpt_personachat_cache", use_cuda=True, args=train_args)
-    model.train_model()
+#    model.train_model()
     model.interact()
 
     # model = ConvAIModel("gpt2", "outputs")
