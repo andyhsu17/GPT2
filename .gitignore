@@ -1,0 +1,7 @@
+.vscode/
+.env
+
+**/backup
+**/cache_dir
+**/runs
+**/outputs

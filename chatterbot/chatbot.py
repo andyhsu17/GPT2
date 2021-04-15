@@ -4,7 +4,8 @@ from chatterbot import ChatBot
 from chatterbot.trainers import ListTrainer
 from chatterbot.trainers import ChatterBotCorpusTrainer
 from chatterbot.trainers import UbuntuCorpusTrainer 
-from chatterbot.trainers import TwitterTrainer
+#from chatterbot.trainers import TwitterTrainer
+
 
 lillyphone = "13039292119"
 andyiphone = "13032534350"
@@ -20,10 +21,10 @@ def main():
                   database_uri='sqlite:///database.sqlite3')
 
 #        conversation = [
-#    logging.basicConfig(level=logging.INFO)
     #bot = ChatBot('Example Bot')
 #    trainer = UbuntuCorpusTrainer(chatbot)
 #    trainer.train()
+#    conversation = [
 #    "Hello",
 #    "Hi there!",
 #    "How are you doing?",
@@ -38,7 +39,7 @@ def main():
     #ubuntu_trainer = UbuntuCorpusTrainer(bot)
     #ubuntu_trainer.train()
     corpus_trainer = ChatterBotCorpusTrainer(bot)
-    corpus_trainer.train("chatterbot.corpus.english")
+#    corpus_trainer.train("chatterbot.corpus.english")
 
     run(bot)
 
